@@ -201,11 +201,15 @@ html {
     .col-12 {width: 100%;}
   }
   
+  /* Hiding Sidebar On Mobile Screen as its hard for you to check search functionality in mobile view as sidebar don't get filtered */
   @media screen and (max-width: 600px) {
-    sidebar {
-      visibility: hidden;
-      margin: 0;
-      padding: 0;
+    .sidebar-container {
       display: none;
+  
     }
+    .card {
+      max-width: 100%;
   }
+  }
+
+  
